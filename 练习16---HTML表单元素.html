@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h2> 1. 下拉列表 :select</h2>
+
+	<form name="select">
+		<select name="cars">
+			<option value="volvo">VOLVO</option>
+			<option value="saab">SAAB</option>
+			<option value="flat">FLAT</option>
+			<option value="audi" selected="true">AUDI</option>
+		</select>
+	</form>
+
+	<h2> 2.多行输入字段,文本域 </h2>
+	<form>
+		<textarea name="messages" rows="10"; cols="30"; style="border-width: 0">
+			The cat was playing in the garden.
+			
+		</textarea>
+	</form>
+
+	<h2> 3. button: </h2>
+	<form>
+		<button type="button"; onclick="alert('hellow word')"; style="border-color: red; color: blue">Click Me!</button>
+	</form>
+
+	<h2> 4. html5新增元素 </h2>
+
+	<form action="alert('hellow word')"; method="GET">
+		请输入用户名:<br>
+		<input type="text" name="userName"> <br>
+		请输入密码:<br>
+		<input type="password" name="password"><br>
+		请选择浏览器类型:<br>
+		<input list="browsers"; name="browsers">
+		<datalist id="browsers">
+			<option value="IE"></option>
+			<option value="Fifoxre"></option>
+			<option value="Chrome"></option>
+			<option value="Oprera"></option>
+			<option value="Safari"></option>
+		</datalist> <br>
+		请输入描述:<br>
+		<textarea placeholder="描述">
+			
+		</textarea> <br>
+		请选择性别:<br> 
+		<input type="radio" name="sex"; value="nan"; checked="1">nan 
+		<input type="radio" name="sex"; value="nv">nv <br>
+
+		请选择工作年龄:<br>
+		<input type="number" name="age"; min="0"; max="1000"; required="true"; step="100"> <br>
+
+		请输入出生日期:<br>
+		<input type="date" name="bDay"; max="2018-01-01"; min="1970-01-01"> <br>
+
+		选择自己的能力值(0-1):<br>
+		<input type="range" name="range"; min="1"; max="100"; > <br>
+
+		邮箱:<br>
+		<input type="email" name="email"> <br>
+
+
+		请选择交通工具:<br>
+		<input type="checkbox" name="car"; value="car"> I have a car 
+		<input type="checkbox" name="bike"; value="bike"> I have a bike <br>
+
+		<input type="submit" name="submit">
+	</form>
+
+</body>
+</html>
